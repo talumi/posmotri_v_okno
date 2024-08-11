@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -55,8 +58,6 @@ fieldset {
   display: flex;
   column-gap: 30px;
   max-width: 1140px;
-  margin: auto;
-  margin-top: 133px;
 }
 
 .result__video-container {
