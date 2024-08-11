@@ -140,21 +140,20 @@ fieldset {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
   box-sizing: border-box;
   width: 19px;
   height: 19px;
   margin-right: 5px;
   border: 1px solid white;
+  padding: 1px;
 }
 
 input[type='checkbox']:checked + .search-form__pseudo-checkbox:before {
   content: '';
-  position: absolute;
   box-sizing: border-box;
-  width: 15px;
-  height: 15px;
-  margin: 1px 1px;
+  width: 100%;
+  height: 100%;
   background-color: white;
 }
 
