@@ -10,7 +10,6 @@ html {
 
 .page {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: auto;
   color: #fff;
@@ -62,7 +61,7 @@ fieldset {
 
 .result__video-container {
   position: relative;
-  width: 711px;
+  inline-size: 711px;
   height: 386px;
   margin-top: 78px;
 }
@@ -79,7 +78,7 @@ fieldset {
   justify-content: space-between;
   align-items: start;
   gap: 40px;
-  margin-top: 16px;
+  margin-top: 18px;
 }
 
 .search-form__fieldset-title {
@@ -159,7 +158,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox:before {
 
 .button {
   min-height: 34px;
-  border: 1px solid white;
+  border: 1px solid currentColor;
   color: white;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
@@ -242,6 +241,12 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox:before {
   outline: 1px solid white;
 }
 
+/*Не добавила состояние active, поскольку дан 
+дополнительный класс content__card-link_current*/
+.content__card-link:active { 
+  background-color: #545050;
+}
+
 .content__card-link_current {
   background-color: #545050;
 }
@@ -255,6 +260,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox:before {
 
 .content__video-card-description-container {
   margin-bottom: 4px;
+  max-width: 200px;
 }
 
 .content__video-card-title {
@@ -263,6 +269,9 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox:before {
   font-size: 30px;
   line-height: 1em;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
