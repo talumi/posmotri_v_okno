@@ -10,6 +10,7 @@ html {
 
 .page {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: auto;
   color: #fff;
@@ -61,9 +62,9 @@ fieldset {
 
 .result__video-container {
   position: relative;
-  inline-size: 711px;
   height: 386px;
   margin-top: 78px;
+  inline-size: 711px;
 }
 
 .result__video {
@@ -193,7 +194,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox:before {
 }
 
 .content__details {
-  width: 100%;
+  min-width: 399px;
   height: 100%;
 }
 
@@ -259,11 +260,12 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox:before {
 }
 
 .content__video-card-description-container {
-  margin-bottom: 4px;
   max-width: 200px;
+  margin-bottom: 4px;
 }
 
 .content__video-card-title {
+  overflow: hidden;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -271,7 +273,6 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox:before {
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .content__video-card-description {
