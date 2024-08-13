@@ -57,7 +57,7 @@ fieldset {
 .content {
   display: flex;
   column-gap: 30px;
-  max-width: 1140px;
+  width: 1140px;
 }
 
 .result__video-container {
@@ -194,7 +194,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox:before {
 }
 
 .content__details {
-  min-width: 399px;
+  width: 100%;
   height: 100%;
 }
 
@@ -242,8 +242,6 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox:before {
   outline: 1px solid white;
 }
 
-/*Не добавила состояние active, поскольку дан 
-дополнительный класс content__card-link_current*/
 .content__card-link:active { 
   background-color: #545050;
 }
